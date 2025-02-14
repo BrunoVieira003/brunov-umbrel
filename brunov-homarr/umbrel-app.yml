@@ -1,0 +1,46 @@
+manifestVersion: 1
+id: brunov-homarr
+name: Homarr
+tagline: A simple, yet powerful dashboard for your server.
+icon: https://static-00.iconduck.com/assets.00/homarr-icon-2048x1386-zch7ypca.png
+category: Dashboard
+version: "1.5.0"
+port: 7575
+description: >-
+  A sleek, modern dashboard that puts all of your apps and services at your fingertips. Control everything in one convenient location. Seamlessly integrates with the apps you've added, providing you with valuable information.
+
+developer: ajnart
+website: https://homarr.dev
+submitter: ajnart
+submission: https://github.com/homarr-labs/homarr
+repo: https://github.com/homarr-labs/homarr
+support: https://github.com/homarr-labs/homarr/issues
+gallery:
+  - https://homarr.dev/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-dark-compressed.webp
+  - https://i.redd.it/my-homarr-dashboard-recently-entered-a-firewalla-v0-nfx5xckhziac1.png?width=2560&format=png&auto=webp&s=5eca5800dbf9227a20c82e7038e312bfcd5e9600
+  - https://preview.redd.it/dqlxh5hnl2ea1.png?auto=webp&s=82bfda1e9fc3d3f8d6046211f52cd332683ffa78
+releaseNotes: >-
+  Features
+  - add api key delete (#2210) (8058b62)
+  - custom time/date format in clock widget (#2180) (be603ba)
+  - improve consistency and design (#1867) (5f36d8b)
+  - open all apps in category (#2212) (bb67bf5)
+
+  Bug Fixes
+  - deps: update dependency @tabler/icons-react to ^3.30.0 (#2266) (c849109)
+  - deps: update dependency drizzle-orm to ^0.39.2 (#2255) (3d0b319)
+  - deps: update dependency ioredis to v5.5.0 (#2264) (0da5a1b)
+  - deps: update dependency jotai to ^2.11.3 (#2215) (a385337)
+  - deps: update dependency octokit to ^4.1.1 (#2262) (3cbb656)
+  - deps: update dependency sass to ^1.84.0 (#2257) (7bbbaf3)
+  - deps: update dependency semver-parser to ^4.1.8 (#2216) (46cfb23)
+  - deps: update dependency trpc-to-openapi to ^2.1.3 (#2244) (c623a42)
+  - deps: update dependency typescript-eslint to ^8.23.0 (#2232) (83044d2)
+  - deps: update testcontainers-node monorepo to ^10.18.0 (#2259) (7a8e671)
+  - deps: update turbo monorepo to ^2.4.0 (#2207) (6ce7bc0)
+  - foreign key reference default search engine (#2211) (26468a4)
+  - make system health temp optional (#2247) (da09826)
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

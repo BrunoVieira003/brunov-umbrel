@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  homarr:
+    image: ghcr.io/homarr-labs/homarr:v1.5.0
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./homarr/appdata:/appdata
+    environment:
+      - SECRET_ENCRYPTION_KEY=8db38731a7167084fc5fdd8fcf34e1b7ac17c371d3b552c16a0b7170f258fb58
+    ports:
+      - '7575:7575'
+			
+    
+  app_proxy:
+    environment:
+      APP_HOST: brunov-homarr_server_1
+      APP_PORT: 7575:7575
+      restart: unless-stopped

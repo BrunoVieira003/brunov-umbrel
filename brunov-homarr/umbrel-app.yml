@@ -2,7 +2,7 @@ manifestVersion: 1
 id: brunov-homarr
 name: Homarr
 tagline: A simple, yet powerful dashboard for your server.
-icon: https://avatars.githubusercontent.com/u/153325344?s=200&v=4
+icon: https://raw.githubusercontent.com/BrunoVieira003/brunov-umbrel-images/fa0ec774e3b0ddb29a55132307741c89d645752f/icons/homarr.svg
 category: Dashboard
 version: "1.5.0"
 port: 7575

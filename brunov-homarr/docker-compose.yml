@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  homarr:
+  server:
     image: ghcr.io/homarr-labs/homarr:v1.5.0
     restart: unless-stopped
     volumes:

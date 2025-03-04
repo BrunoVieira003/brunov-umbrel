@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  server:
+    image: ghcr.io/gethomepage/homepage:v0.10.9
+    volumes:
+      - ${APP_DATA_DIR}/config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
+    
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: brunov-homepage_server_1
+      APP_PORT: 3000
+      restart: unless-stopped

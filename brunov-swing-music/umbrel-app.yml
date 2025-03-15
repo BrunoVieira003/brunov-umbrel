@@ -20,17 +20,9 @@ gallery:
   - https://swingmx.com/gallery//folder.webp
   - https://swingmx.com/gallery//album.webp
 releaseNotes: >-
-  New opt-in alternate (no sidebar) layout
-  Added search bar to the top bar (all layouts)
-  Move browse options to homepage bottom
-  Content is now centered on the default layout
-  Move to a stronger WSGI server (waitress)
-  Proper ARM64 and other platforms support
-  A proper timezone fix. Thanks to @tcsenpai on #170
-  Hovering over a recently played/added item on the homepage will reveal how long ago
-  Recently added items will not have a cutoff
-  Folder page search is gone for now (we'll find a place to fix it in later versions)
-  The exhaustive list of web client stuff can be found on commit 4211ccc in the client repo.
+  Fix files not being indexed errors when running on Windows (dev note: multiprocessing bugs)
+  Fix favorites card not appearing on homepage
+  Process audio silence using processes instead of threads
   
 dependencies: []
 path: ""

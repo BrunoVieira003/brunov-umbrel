@@ -7,7 +7,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/swingmx/swingmusic:v1.4.8
+    image: ghcr.io/swingmx/swingmusic:v2.0.2
     restart: on-failure
     environment:
       - PUID=1000

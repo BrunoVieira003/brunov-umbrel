@@ -15,6 +15,9 @@ This repository is a collection of apps that I want to use on my personal umbrel
 ### Media
 - [Swing Music](https://github.com/swingmx/swingmusic) - beautiful, self-hosted music player for your local audio files
 
+### Developer Tools
+- [Komodo](https://github.com/moghtech/komodo) - A tool to build and deploy software across many servers and alternative to [Portainer](https://github.com/portainer/portainer)
+
 ## App versions
 | App         | Version |
 |-------------|---------|
@@ -23,3 +26,4 @@ This repository is a collection of apps that I want to use on my personal umbrel
 | Homepage    | 0.10.9  |
 | FileFlows   | 25.02.9 |
 | Swing Music | 2.0.2   |
+| Komodo      | 1.17.4  |

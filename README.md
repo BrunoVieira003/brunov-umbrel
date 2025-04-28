@@ -19,7 +19,7 @@ This repository is a collection of apps that I want to use on my personal umbrel
 | App         | Version |
 |-------------|---------|
 | Glance      | 0.7.3   |
-| Homarr      | 1.8.0   |
+| Homarr      | 1.18.1  |
 | Homepage    | 0.10.9  |
 | FileFlows   | 25.02.9 |
 | Swing Music | 2.0.2   |

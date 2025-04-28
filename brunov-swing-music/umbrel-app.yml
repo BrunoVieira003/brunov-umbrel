@@ -21,7 +21,9 @@ gallery:
   - https://swingmx.com/gallery//album.webp
 releaseNotes: >-
   Fix files not being indexed errors when running on Windows (dev note: multiprocessing bugs)
+
   Fix favorites card not appearing on homepage
+  
   Process audio silence using processes instead of threads
   
 dependencies: []

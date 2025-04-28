@@ -9,10 +9,8 @@ port: 7575
 description: >-
   A sleek, modern dashboard that puts all of your apps and services at your fingertips. Control everything in one convenient location. Seamlessly integrates with the apps you've added, providing you with valuable information.
 
-developer: ajnart
+developer: homarr-labs
 website: https://homarr.dev
-submitter: ajnart
-submission: https://github.com/homarr-labs/homarr
 repo: https://github.com/homarr-labs/homarr
 support: https://github.com/homarr-labs/homarr/issues
 gallery:

@@ -11,8 +11,6 @@ description: >-
 
 developer: swingmx
 website: https://swingmx.com/
-submitter: swingmx
-submission: https://github.com/swingmx/swingmusic
 repo: https://github.com/swingmx/swingmusic
 support: https://github.com/swingmx/swingmusic/issues
 gallery:
@@ -23,7 +21,7 @@ releaseNotes: >-
   Fix files not being indexed errors when running on Windows (dev note: multiprocessing bugs)
 
   Fix favorites card not appearing on homepage
-  
+
   Process audio silence using processes instead of threads
   
 dependencies: []

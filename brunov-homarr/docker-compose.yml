@@ -11,7 +11,7 @@ services:
       - SECRET_ENCRYPTION_KEY=8db38731a7167084fc5fdd8fcf34e1b7ac17c371d3b552c16a0b7170f258fb58
     ports:
       - 7575
-			
+
     
   app_proxy:
     environment:

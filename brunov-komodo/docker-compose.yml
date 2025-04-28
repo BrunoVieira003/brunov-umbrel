@@ -1,10 +1,5 @@
 version: "3"
 services:
-  app_proxy:
-    environment:
-      APP_HOST: brunov-komodo_server_1
-      APP_PORT: 9120
-      PROXY_AUTH_ADD: "false"
 
 ## This compose file will deploy:
 ##   1. Postgres + FerretDB Mongo adapter (https://www.ferretdb.com)
@@ -80,6 +75,12 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc:/proc
       - /etc/komodo:/etc/komodo
+  
+  app_proxy:
+    environment:
+      APP_HOST: brunov-komodo_server_1
+      APP_PORT: 9120
+      PROXY_AUTH_ADD: "false"
 
 volumes:
   # Postgres

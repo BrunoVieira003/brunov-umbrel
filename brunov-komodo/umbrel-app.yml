@@ -2,8 +2,8 @@ manifestVersion: 1
 id: brunov-komodo
 name: Komodo
 tagline: 🦎 A tool to build and deploy software across many servers 🦎.
-icon: https://komo.do/img/komodo-512x512.png
-category: 🚧 In Progress
+icon: https://raw.githubusercontent.com/BrunoVieira003/brunov-umbrel-images/refs/heads/master/icons/komodo.png
+category: Developer Tools
 version: "1.17.4"
 port: 9120
 description: >-

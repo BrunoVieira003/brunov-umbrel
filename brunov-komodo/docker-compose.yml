@@ -58,7 +58,7 @@ services:
       - KOMODO_LOCAL_AUTH=true
       - KOMODO_WEBHOOK_SECRET=${KOMODO_WEBHOOK_SECRET:-komodo_webhook_secret}
       - KOMODO_JWT_SECRET=${KOMODO_JWT_SECRET:-komodo_jwt_secret}
-      - KOMODO_JWT_TTL=${KOMODO_JWT_TTL:-"1-day"}
+      - KOMODO_JWT_TTL=${KOMODO_JWT_TTL:-1-day}
       - TZ=America/Sao_Paulo # Change this to your timezone
     volumes:
       - repo-cache:/repo-cache

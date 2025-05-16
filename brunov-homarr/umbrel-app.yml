@@ -18,11 +18,19 @@ gallery:
   - https://i.redd.it/my-homarr-dashboard-recently-entered-a-firewalla-v0-nfx5xckhziac1.png?width=2560&format=png&auto=webp&s=5eca5800dbf9227a20c82e7038e312bfcd5e9600
   - https://preview.redd.it/dqlxh5hnl2ea1.png?auto=webp&s=82bfda1e9fc3d3f8d6046211f52cd332683ffa78
 releaseNotes: >-
-  Bug Fixes
+  Features
 
-  - cannot find module http-cookie-agent/http (#2972) (bb92f5b)
+  - add css class to logo for custom css (#3121) (9b8320c)
 
-  - deps: update dependency mysql2 to v3.14.1 (#2969) (5f80beb)
+  - auth: add account linking for oidc providers (#3106) (3daf1c8)
+
+  - integration: improve integration test connection (#3005) (ef9a5e9)
+
+  - releases-widget: added auto icon search when editing a repository (#3087) (9413430)
+
+  - releases-widget: limit number of displayed releases and custom name for repositories (#2974) (8c1b365)
+
+  - Some other bugfixes
 
 dependencies: []
 path: ""

@@ -24,6 +24,6 @@ This repository is a collection of apps that I want to use on my personal umbrel
 | Glance      | 0.7.3   |
 | Homarr      | 1.20.0  |
 | Homepage    | 0.10.9  |
-| FileFlows   | 25.02.9 |
+| FileFlows   | 25.04.9 |
 | Swing Music | 2.0.2   |
 | Komodo      | 1.17.4  |

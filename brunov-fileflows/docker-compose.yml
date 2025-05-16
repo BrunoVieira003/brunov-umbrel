@@ -2,7 +2,7 @@ version: '3'
 
 services:
   server:
-    image: revenz/fileflows
+    image: revenz/fileflows:25.04
     restart: unless-stopped
     environment:
       - TempPathHost=${APP_DATA_DIR}/temp

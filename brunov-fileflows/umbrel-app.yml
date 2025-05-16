@@ -4,7 +4,7 @@ name: FileFlows
 tagline: The ultimate solution for automatic file processing!
 icon: https://i.imgur.com/3S67EOB.png
 category: Files
-version: "25.02.9"
+version: "25.04.9"
 port: 19200
 description: >-
   FileFlows is a file processing application that can execute actions against a file in a tree flow structure.

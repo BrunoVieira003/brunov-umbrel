@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api:
-    image: python:3.12
+    image: python:3-alpine3.22
     working_dir: /app
     volumes:
       - ./app:/app

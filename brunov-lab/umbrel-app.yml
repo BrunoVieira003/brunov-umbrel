@@ -1,0 +1,13 @@
+manifestVersion: 1
+id: brunov-lab
+name: My Lab
+tagline: This is my lab
+icon: https://robohash.org/lab
+category: 0Lab
+version: "0.0.0"
+port: 5000
+description: >-
+  This is my lab
+  
+dependencies: []
+path: ""

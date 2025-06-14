@@ -28,7 +28,7 @@ widgets:
   - id: "status"
     type: "four-stats"
     refresh: "5s"
-    endpoint: "https://684dd8fc65ed087139174228.mockapi.io/status"
+    endpoint: "https://umbrel-widgets.free.beeceptor.com/status"
     link: ""
     example:
       type: "four-stats"

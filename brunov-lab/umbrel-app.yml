@@ -24,6 +24,28 @@ releaseNotes: >-
 
   Process audio silence using processes instead of threads
 
+widgets:
+  - id: "status"
+    type: "four-stats"
+    refresh: "5s"
+    endpoint: "https://684dd8fc65ed087139174228.mockapi.io/status"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "Username 3"
+          text: "3"
+          subtext: "torrents"
+        - title: "Username 1"
+          text: "1"
+          subtext: "torrents"
+        - title: "Username 0"
+          text: "0"
+          subtext: "torrents"
+        - title: "Username 4"
+          text: "2"
+          subtext: "torrents"
   
 dependencies: []
 path: ""

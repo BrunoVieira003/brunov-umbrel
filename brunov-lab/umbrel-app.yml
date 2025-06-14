@@ -28,7 +28,7 @@ widgets:
   - id: "status"
     type: "four-stats"
     refresh: "5s"
-    endpoint: "http://umbrel-widgets.free.beeceptor.com/status"
+    endpoint: "widget:5000/status"
     link: ""
     example:
       type: "four-stats"

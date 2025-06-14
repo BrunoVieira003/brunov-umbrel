@@ -8,6 +8,20 @@ version: "0.0.0"
 port: 5000
 description: >-
   This is my lab
+
+developer: me
+website: https://github.com/
+repo: https://github.com
+support: https://github.com
+gallery:
+  - https://robohash.org/dumb-image
+releaseNotes: >-
+  Testing widgets now
+
+  Fix favorites card not appearing on homepage
+
+  Process audio silence using processes instead of threads
+
   
 dependencies: []
 path: ""

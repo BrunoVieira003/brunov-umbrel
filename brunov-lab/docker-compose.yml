@@ -2,11 +2,9 @@ version: '3'
 
 services:
   api:
-    image: python:3-alpine3.22
-    working_dir: /app
-    volumes:
-      - ./app:/app
+    image: clue/json-server
     ports:
-      - "5000:5000"
+      - "5000:80"
     command: >
-      bash -c "pip install flask && pwd && python app/app.py"
+      sh -c "echo '{\"info\":[{\"id\":1,\"status\":\"ok\",\"message\":\"test info\"}]}' > /data/db.json && json-server --watch /data/db.json --host 0.0.0.0 --port 80"
+

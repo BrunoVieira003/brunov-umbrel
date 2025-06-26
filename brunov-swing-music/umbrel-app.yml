@@ -4,7 +4,7 @@ name: Swing Music
 tagline: Swing Music is a beautiful, self-hosted music player for your local audio files. Like a cooler Spotify ... but bring your own music.
 icon: https://raw.githubusercontent.com/BrunoVieira003/brunov-umbrel-images/b32b6556ccb0a7cb4825031ee8abcb8f9eac9293/icons/swing-music.svg
 category: Media
-version: "2.0.2"
+version: "2.0.8"
 port: 1970
 description: >-
   Swing Music is a beautiful, self-hosted music player for your local audio files. Like a cooler Spotify ... but bring your own music. Just run the app and enjoy your music library in a web browser.

@@ -13,6 +13,7 @@ This repository is a collection of apps that I want to use on my personal umbrel
 - [FileFlows](https://fileflows.com) - automatic file processing
 
 ### Media
+- [Airstation](https://github.com/cheatsnake/airstation) - your own online radio station
 - [Swing Music](https://github.com/swingmx/swingmusic) - beautiful, self-hosted music player for your local audio files
 
 ### Developer Tools
@@ -27,3 +28,4 @@ This repository is a collection of apps that I want to use on my personal umbrel
 | FileFlows   | 25.04.9 |
 | Swing Music | 2.0.2   |
 | Komodo      | 1.17.4  |
+| Airstation  | 1.1.0   |

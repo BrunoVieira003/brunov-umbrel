@@ -1,0 +1,18 @@
+services:
+  server:
+    image: cheatsnake/airstation:1.1.0
+    environment:
+      - AIRSTATION_SECRET_KEY=$APP_PASSWORD
+      - AIRSTATION_JWT_SIGN=$APP_SEED
+    ports:
+      - "7331:7331"
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/downloads/music:/app/static/tracks:rw
+      - ${APP_DATA_DIR}/storage:/app/storage:rw
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:7331/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

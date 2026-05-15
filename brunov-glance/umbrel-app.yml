@@ -2,7 +2,7 @@ manifestVersion: 1
 id: brunov-glance
 name: Glance
 tagline: A self-hosted dashboard that puts all your feeds in one place
-icon: https://avatars.githubusercontent.com/u/159397742?s=48&v=4
+icon: https://avatars.githubusercontent.com/u/159397742
 category: Dashboard
 version: "0.8.4"
 port: 4848
@@ -23,11 +23,13 @@ releaseNotes: >-
 
   - Made the auto-invert icon prefix work for icons from libraries, so you can now do things like icon: auto-invert sh:glance-dark which will automatically invert dark icons to light depending on your theme
   
+
   Fixes
 
   - Fixed multiple to-do widgets on a single page not working (thanks @rhijjawi & @tty2)
 
   - Fixed the search widget shortcut (S) not working when using a keyboard layout other than English (thanks @NikD0T)
+
 
   What's Changed
 

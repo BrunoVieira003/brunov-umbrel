@@ -22,7 +22,7 @@ This repository is a collection of apps that I want to use on my personal umbrel
 ## App versions
 | App         | Version |
 |-------------|---------|
-| Glance      | 0.7.3   |
+| Glance      | 0.8.4   |
 | Homarr      | 1.20.0  |
 | Homepage    | 0.10.9  |
 | FileFlows   | 25.04.9 |

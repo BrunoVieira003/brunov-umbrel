@@ -15,7 +15,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: komodo
   
   core:
-    image: ghcr.io/moghtech/komodo-core:${APP_VERSION:-2.2.0}
+    image: ghcr.io/moghtech/komodo-core:2.2.0
     init: true
     labels:
       komodo.skip: # Prevent Komodo from stopping with StopAllContainers
@@ -39,7 +39,7 @@ services:
       - ${APP_DATA_DIR}/keys:/backups
 
   periphery:
-    image: ghcr.io/moghtech/komodo-periphery:${APP_VERSION:-2.2.0}
+    image: ghcr.io/moghtech/komodo-periphery:2.2.0
     init: true
     labels:
       komodo.skip: # Prevent Komodo from stopping with StopAllContainers

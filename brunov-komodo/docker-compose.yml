@@ -31,6 +31,8 @@ services:
       - PERIPHERY_CORE_PUBLIC_KEYS=file:/config/keys/core.pub
       - KOMODO_TITLE=Komodo
       - KOMODO_DATABASE_ADDRESS=mongo:27017
+      - KOMODO_DATABASE_USERNAME=komodo
+      - KOMODO_DATABASE_PASSWORD=komodo
       - KOMODO_LOCAL_AUTH=true
       - KOMODO_WEBHOOK_SECRET=${APP_SEED:-komodo_webhook_secret}
       - KOMODO_JWT_SECRET=${APP_SEED:-komodo_jwt_secret}

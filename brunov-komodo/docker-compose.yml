@@ -27,6 +27,8 @@ services:
     ports:
       - 9120:9120
     environment:
+      - KOMODO_PERIPHERY_PUBLIC_KEY=file:/config/keys/periphery.pub
+      - PERIPHERY_CORE_PUBLIC_KEYS=file:/config/keys/core.pub
       - KOMODO_TITLE=Komodo
       - KOMODO_DATABASE_ADDRESS=mongo:27017
       - KOMODO_LOCAL_AUTH=true
@@ -36,7 +38,7 @@ services:
       - TZ=America/Sao_Paulo # Change this to your timezone
     volumes:
       - ${APP_DATA_DIR}/keys:/config/keys
-      - ${APP_DATA_DIR}/keys:/backups
+      - ${APP_DATA_DIR}/backups:/backups
 
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:2.2.0
@@ -49,6 +51,8 @@ services:
     logging:
       driver: local
     environment:
+      - KOMODO_PERIPHERY_PUBLIC_KEY=file:/config/keys/periphery.pub
+      - PERIPHERY_CORE_PUBLIC_KEYS=file:/config/keys/core.pub
       - PERIPHERY_SSL_ENABLED=true
       - PERIPHERY_INCLUDE_DISK_MOUNTS=/etc/hostname
       - TZ=America/Sao_Paulo

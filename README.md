@@ -27,5 +27,5 @@ This repository is a collection of apps that I want to use on my personal umbrel
 | Homepage    | 0.10.9  |
 | FileFlows   | 25.04.9 |
 | Swing Music | 2.0.2   |
-| Komodo      | 1.17.4  |
+| Komodo      | 2.2.0   |
 | Airstation  | 1.1.0   |

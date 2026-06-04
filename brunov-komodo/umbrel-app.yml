@@ -2,9 +2,9 @@ manifestVersion: 1
 id: brunov-komodo
 name: Komodo
 tagline: 🦎 A tool to build and deploy software across many servers 🦎.
-icon: https://raw.githubusercontent.com/BrunoVieira003/brunov-umbrel-images/refs/heads/master/icons/komodo.png
+icon: https://komo.do/img/komodo-512x512.png
 category: Developer Tools
-version: "1.17.4"
+version: "2.2.0"
 port: 9120
 description: >-
   Komodo is a web app to provide structure for managing your servers, builds, deployments, and automated procedures.
@@ -34,13 +34,26 @@ gallery:
   - https://raw.githubusercontent.com/moghtech/komodo/main/screenshots/Light-Stack.png
   - https://raw.githubusercontent.com/moghtech/komodo/main/screenshots/Light-Compose.png
 releaseNotes: >-
-  Overview:
-
-  - In app terminal access to your servers re #142
-
-  - docker exec into containers re #75
-
-  - IMPORTANT: Use disable_terminals (PERIPHERY_DISABLE_TERMINALS) in periphery config to disable this functionality on particular servers.
+  
+  - Swarm / Deployment: Fix Deployment "Tasks" and "Inspect" tabs when attached to a Swarm
+  
+  - Stack: Allow excluding specific services from Global Auto Update by @mateuszziolkowski
+  
+  - Resource Sync: During RunSync, ensure Repo changes are applied before all other potentially dependent resource type changes: Builds, Stacks, and Resource Syncs.
+  
+  - TOML: Add resource TOML schema (for editor auto-complete / suggestions / documentation) hosted by every Komodo Core at /schema/resources.json (example: https://demo.komo.do/schema/resources.json) by @bytedream
+  
+  - Core: Add standard shell mode (direct passthrough) for system commands by @ericls
+  
+  - Core: Make the security headers customizable to restore iframe functionality
+  
+  - Core: Enable OIDC auto redirect behavior on login page by @johnmaguire
+  
+  - Core: Per provider new user registration by @johnmaguire
+  
+  - UI: Improve table text sizing and wide log pre wrapping by @elemated
+  
+  - UI: Move more common components to mogh_ui library: https://github.com/moghtech/lib/tree/main/ui
   
 dependencies: []
 path: ""

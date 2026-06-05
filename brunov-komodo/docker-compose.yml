@@ -27,20 +27,17 @@ services:
     ports:
       - 9120:9120
     environment:
-      - KOMODO_PERIPHERY_PUBLIC_KEY=file:/config/keys/periphery.pub
-      - PERIPHERY_CORE_PUBLIC_KEYS=file:/config/keys/core.pub
-      - KOMODO_TITLE=Komodo
-      - KOMODO_DATABASE_ADDRESS=mongo:27017
-      - KOMODO_DATABASE_USERNAME=komodo
-      - KOMODO_DATABASE_PASSWORD=komodo
-      - KOMODO_LOCAL_AUTH=true
-      - KOMODO_WEBHOOK_SECRET=${APP_SEED:-komodo_webhook_secret}
-      - KOMODO_JWT_SECRET=${APP_SEED:-komodo_jwt_secret}
-      - KOMODO_JWT_TTL=1-day
-      - TZ=America/Sao_Paulo # Change this to your timezone
+      KOMODO_LOCAL_AUTH: "true"
+      KOMODO_DATABASE_ADDRESS: brunov-komodo_mongo_1:27017
+      KOMODO_DATABASE_USERNAME: komodo
+      KOMODO_DATABASE_PASSWORD: komodo
+      KOMODO_PASSKEY: ${APP_PASSWORD}
+      KOMODO_FIRST_SERVER: https://brunov-komodo_periphery_1:8120
+      KOMODO_JWT_SECRET: ${APP_SEED}
+      TZ: America/Sao_Paulo # Change this to your timezone
     volumes:
-      - ${APP_DATA_DIR}/keys:/config/keys
-      - ${APP_DATA_DIR}/backups:/backups
+      - ${APP_DATA_DIR}/data/core:/backups
+      - ${APP_DATA_DIR}/data/keys:/config/keys
 
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:2.2.0
@@ -53,16 +50,20 @@ services:
     logging:
       driver: local
     environment:
-      - KOMODO_PERIPHERY_PUBLIC_KEY=file:/config/keys/periphery.pub
-      - PERIPHERY_CORE_PUBLIC_KEYS=file:/config/keys/core.pub
-      - PERIPHERY_SSL_ENABLED=true
-      - PERIPHERY_INCLUDE_DISK_MOUNTS=/etc/hostname
-      - TZ=America/Sao_Paulo
+      COMPOSE_KOMODO_IMAGE_TAG: latest
+      KOMODO_PASSKEY: ${APP_PASSWORD}
+      TZ: America/Sao_Paulo
+      PERIPHERY_ROOT_DIRECTORY: /etc/komodo
+      PERIPHERY_PASSKEYS: ${APP_PASSWORD}
+      PERIPHERY_DISABLE_TERMINALS: "false"
+      PERIPHERY_SSL_ENABLED: "true"
+      PERIPHERY_INCLUDE_DISK_MOUNTS: /etc/hostname
+      PERIPHERY_LOGGING_PRETTY: "false"
+      PERIPHERY_PRETTY_STARTUP_CONFIG: "false"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc:/proc
-      - /etc/komodo:/etc/komodo
-      - ${APP_DATA_DIR}/keys:/config/keys
+      - ${APP_DATA_DIR}/data/periphery:/etc/komodo
 
 volumes:
   # Mongo
